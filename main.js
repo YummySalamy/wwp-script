@@ -1,1 +1,345 @@
-const _0x15893f=_0x4e5c;function _0x558e(){const _0x54c555=['style','2149764seefzx','question','888350iGadDx','createChatbotSession','random','user_id','<div\x20class=\x22message-content\x22>','getPosition','trim','button__container','initialize','WEB','sort','onopen','messages','></img>\x0a\x20\x20\x20\x20\x20\x20<h2>','106FMGXkI','widget__container','cgf','substring','thx','session_id','closeIcon','313744ZSneBI','https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap','scrollHeight','error','123456','status','parse','stringify','Error\x20creating\x20chatbot\x20session:','WebSocket\x20connection\x20closed','type','button','createElement','addMessageSession','getAttribute','span','sendMessage','NORMAL','310510RMltwZ','data','2149pbnjmW','json','push','link','toString','widgetIcon','30px','socket','vrx','chatbotParameters','add','widget__icon','scrollTop','chat-message','.chat-box','remove','POST','createWidgetContent','answer','replace','https://aichain-chat-api-v2-qd5u6w2c6q-uc.a.run.app/add_message','bot','widget__hidden','434oADGAz','https://prd-aichain-chatbot-upload-qd5u6w2c6q-uc.a.run.app/chatbot/sessions','querySelector','bind','chatbotSessionId','https://prd-aichain-chatbot-messenger-qd5u6w2c6q-uc.a.run.app/web/webhook','injectStyles','chatpgt-token-xkaos2z','378903JhbKih','9999','stylesheet','icon_url','animation','onerror','keys','getItem','\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20<form\x20class=\x22input-container\x22>\x0a\x20\x20\x20\x20<div\x20class=\x22inputGroup\x22>\x0a\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20required=\x22\x22\x20autocomplete=\x22off\x22\x20id=\x22messageInput\x22\x20class=\x22form-input\x22>\x0a\x20\x20\x20\x20\x20\x20<label\x20for=\x22name\x22>','.chat-container','WebSocket\x20error:','message-','innerHTML','div','getElementById','</h2>\x0a\x20\x20\x20\x20</header>\x0a\x0a\x20\x20\x20\x20<div\x20class=\x22chat-container\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22chat-box\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chat-message\x20message-bot\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','fromCharCode','225rYvDpy','application/json','appendChild','length','</div>','log','click','addEventListener','createWebSocketConnection','toggleOpen','slideInFromLeft\x200.5s','classList','text/css','body','Failed\x20to\x20create\x20chatbot\x20session','WebSocket\x20connection\x20opened','33256DikaqD','createdAt','value','</label>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<button\x20class=\x22button-45\x22\x20role=\x22button\x22\x20type=\x22submit\x22>Enviar</button>\x0a\x20\x20\x20\x20</form>\x0a\x20\x20\x20\x20<footer\x20class=\x22poweredByContainer\x22>\x0a\x20\x20\x20\x20\x20\x20<p\x20class=\x22footer__text\x22>Powered\x20by\x20<a\x20class=\x27nubot-link\x27\x20href=\x27https://nubot.io\x27\x20target=\x27_blank\x27>nubot.io</a></p>\x0a\x20\x20\x20\x20</footer>\x0a\x20\x20\x20\x20','Error\x20sending\x20message:','onclose','Error\x20:','head','open','widgetContainer','position','onmessage','user','displayMessage','href','setItem','displayPreviousMessages'];_0x558e=function(){return _0x54c555;};return _0x558e();}(function(_0x7abb9e,_0x21f5d8){const _0x50ab06=_0x4e5c,_0x2a6f3e=_0x7abb9e();while(!![]){try{const _0x3b1b2d=-parseInt(_0x50ab06(0x21c))/0x1*(-parseInt(_0x50ab06(0x201))/0x2)+parseInt(_0x50ab06(0x23b))/0x3+-parseInt(_0x50ab06(0x208))/0x4+parseInt(_0x50ab06(0x1f3))/0x5+parseInt(_0x50ab06(0x1f1))/0x6+parseInt(_0x50ab06(0x233))/0x7*(parseInt(_0x50ab06(0x1df))/0x8)+-parseInt(_0x50ab06(0x1cf))/0x9*(parseInt(_0x50ab06(0x21a))/0xa);if(_0x3b1b2d===_0x21f5d8)break;else _0x2a6f3e['push'](_0x2a6f3e['shift']());}catch(_0xdd85c2){_0x2a6f3e['push'](_0x2a6f3e['shift']());}}}(_0x558e,0x2bbf1));import{CLOSE_ICON,MESSAGE_ICON,styles,aditionalStyles,chatbotWindowName,welcomeMessage,placeHolder}from'./assets.js';const iconUrl=localStorage[_0x15893f(0x1c5)](_0x15893f(0x23e));function unescapeStr(_0x1485b4){const _0x1eea3d=_0x15893f;return _0x1485b4[_0x1eea3d(0x22f)](/\\u[\dA-F]{4}/gi,function(_0x2f42a5){const _0x5d5b9c=_0x1eea3d;return String[_0x5d5b9c(0x1ce)](parseInt(_0x2f42a5[_0x5d5b9c(0x22f)](/\\u/g,''),0x10));});}class MessageWidget{constructor(_0x276333='bottom-right'){const _0xfc33ac=_0x15893f;this[_0xfc33ac(0x1e9)]=this[_0xfc33ac(0x1f8)](_0x276333),this['open']=![],this[_0xfc33ac(0x1fb)](),this[_0xfc33ac(0x239)](),this[_0xfc33ac(0x1ff)]=[];}[_0x15893f(0x1e9)]='';[_0x15893f(0x1e7)]=![];[_0x15893f(0x1e8)]=null;['getPosition'](_0x54bde4){const _0x1484f2=_0x15893f,_0x573f22=localStorage['getItem'](_0x1484f2(0x1f6))!==null;if(!_0x573f22){const _0x20f0c8=Math[_0x1484f2(0x1f5)]()[_0x1484f2(0x220)](0x24)['substring'](0x2,0xf)+Math[_0x1484f2(0x1f5)]()[_0x1484f2(0x220)](0x24)[_0x1484f2(0x204)](0x2,0xf);localStorage[_0x1484f2(0x1ee)](_0x1484f2(0x1f6),_0x20f0c8);}const [_0x579189,_0x4a4d39]=_0x54bde4['split']('-');return{[_0x579189]:_0x1484f2(0x222),[_0x4a4d39]:'30px'};}async[_0x15893f(0x1fb)](){const _0x2dea94=_0x15893f,_0x10a434=document[_0x2dea94(0x1e6)],_0x1011fb=document[_0x2dea94(0x214)](_0x2dea94(0x21f));_0x1011fb['rel']=_0x2dea94(0x23d),_0x1011fb[_0x2dea94(0x212)]=_0x2dea94(0x1db),_0x1011fb[_0x2dea94(0x1ed)]=_0x2dea94(0x209),_0x10a434[_0x2dea94(0x1d1)](_0x1011fb);const _0x55ac97=document[_0x2dea94(0x214)](_0x2dea94(0x1cb));_0x55ac97[_0x2dea94(0x1f0)]['zIndex']=_0x2dea94(0x23c),Object[_0x2dea94(0x1c4)](this[_0x2dea94(0x1e9)])['forEach'](_0x48ce57=>_0x55ac97[_0x2dea94(0x1f0)][_0x48ce57]=this[_0x2dea94(0x1e9)][_0x48ce57]),document[_0x2dea94(0x1dc)][_0x2dea94(0x1d1)](_0x55ac97);const _0x4a2309=document['createElement'](_0x2dea94(0x213));_0x4a2309[_0x2dea94(0x1da)][_0x2dea94(0x226)](_0x2dea94(0x1fa));const _0x2e378e=document[_0x2dea94(0x214)]('span');_0x2e378e['innerHTML']=MESSAGE_ICON,_0x2e378e[_0x2dea94(0x1da)][_0x2dea94(0x226)](_0x2dea94(0x227)),this[_0x2dea94(0x221)]=_0x2e378e;const _0x42307a=document[_0x2dea94(0x214)](_0x2dea94(0x217));_0x42307a[_0x2dea94(0x1ca)]=CLOSE_ICON,_0x42307a[_0x2dea94(0x1da)][_0x2dea94(0x226)](_0x2dea94(0x227),_0x2dea94(0x232)),this['closeIcon']=_0x42307a,_0x4a2309[_0x2dea94(0x1d1)](this['widgetIcon']),_0x4a2309['appendChild'](this[_0x2dea94(0x207)]),_0x4a2309[_0x2dea94(0x1d6)](_0x2dea94(0x1d5),this[_0x2dea94(0x1d8)][_0x2dea94(0x236)](this)),this[_0x2dea94(0x1e8)]=document[_0x2dea94(0x214)]('div'),this['widgetContainer']['classList']['add']('widget__hidden',_0x2dea94(0x202)),this[_0x2dea94(0x22d)](),_0x55ac97[_0x2dea94(0x1d1)](this[_0x2dea94(0x1e8)]),_0x55ac97[_0x2dea94(0x1d1)](_0x4a2309);const _0x3c3a5c=_0x55ac97[_0x2dea94(0x235)]('.button-45');_0x3c3a5c[_0x2dea94(0x1d6)](_0x2dea94(0x1d5),async _0x1f2229=>{const _0xd8d18=_0x2dea94;_0x1f2229['preventDefault']();const _0x3d0ce5=_0x55ac97[_0xd8d18(0x235)]('#messageInput'),_0x482d60=_0x3d0ce5[_0xd8d18(0x1e1)][_0xd8d18(0x1f9)]();if(_0x482d60==='')return;this[_0xd8d18(0x1ec)](_0x482d60,_0xd8d18(0x1eb)),this[_0xd8d18(0x218)](_0x482d60),_0x3d0ce5[_0xd8d18(0x1e1)]='';});}async['createChatbotSession'](){const _0x35f19e=_0x15893f,_0x472316=_0x35f19e(0x234),_0x2051e6=document[_0x35f19e(0x1cc)](_0x35f19e(0x225)),_0x1d17b2=_0x2051e6['getAttribute']('cgf'),_0x5a7e9c='WEB',_0x28da99=localStorage['getItem']('user_id'),_0x419b80=_0x2051e6['getAttribute'](_0x35f19e(0x224)),_0x2b738e=null;this[_0x35f19e(0x1ff)][_0x35f19e(0x1d2)]=0x0;const _0x5105dd={'chatbot_id':_0x1d17b2,'channel_type':_0x5a7e9c,'user_id':_0x28da99,'session_id':_0x28da99};try{const _0x33591a=await fetch(_0x472316,{'method':_0x35f19e(0x22c),'headers':{'Content-Type':'application/json'},'body':JSON[_0x35f19e(0x20f)](_0x5105dd)});if(!_0x33591a['ok'])throw new Error(_0x35f19e(0x1dd));const _0x53cbac=await _0x33591a[_0x35f19e(0x21d)](),_0xd074c7=_0x53cbac[_0x35f19e(0x1ff)];for(const _0x27e6ec in _0xd074c7){const _0xc6a1ed=_0xd074c7[_0x27e6ec];this[_0x35f19e(0x1ff)][_0x35f19e(0x21e)](_0xc6a1ed);}this[_0x35f19e(0x1ff)][_0x35f19e(0x1fd)]((_0x201344,_0x2b33c3)=>{const _0xc422a4=_0x35f19e;return new Date(_0x201344[_0xc422a4(0x1e0)])-new Date(_0x2b33c3['createdAt']);});for(const _0x209a51 of this[_0x35f19e(0x1ff)]){const _0x411d85=_0x209a51['reaction']===_0x35f19e(0x219)?_0x35f19e(0x231):'user';this['displayPreviousMessages'](_0x209a51[_0x35f19e(0x1f2)],'user'),this['displayPreviousMessages'](_0x209a51[_0x35f19e(0x22e)],_0x35f19e(0x231));}this[_0x35f19e(0x237)]=_0x53cbac[_0x35f19e(0x206)],localStorage[_0x35f19e(0x1ee)]('chatbotSessionId',this[_0x35f19e(0x237)]);}catch(_0x49044a){console[_0x35f19e(0x20b)](_0x35f19e(0x210),_0x49044a);}}async[_0x15893f(0x215)](_0x53c829,_0x467701){const _0x3f340d=_0x15893f,_0x1225b7=unescapeStr(_0x467701),_0x1498ee=_0x3f340d(0x230),_0x32a5ae=document[_0x3f340d(0x1cc)](_0x3f340d(0x225)),_0x4f64b9=_0x32a5ae[_0x3f340d(0x216)](_0x3f340d(0x203)),_0x5219a4=_0x3f340d(0x1fc),_0x10393d=_0x32a5ae[_0x3f340d(0x216)]('thx'),_0x2d41b6=localStorage['getItem']('chatbotSessionId'),_0x52d30d=_0x3f340d(0x23a),_0x3800fc={'token':_0x52d30d},_0x50970e=null,_0x1f3af7={'question':_0x53c829,'answer':_0x1225b7,'metadata':{'chatbotId':_0x4f64b9,'channelType':_0x5219a4,'userId':_0x10393d,'sessionId':_0x2d41b6}};try{const _0x3066a2=await fetch(_0x1498ee,{'method':'POST','headers':{'Content-Type':_0x3f340d(0x1d0),..._0x3800fc},'body':JSON[_0x3f340d(0x20f)](_0x1f3af7)});if(!_0x3066a2['ok'])throw new Error('Failed\x20to\x20create\x20chatbot\x20session');const _0x1effda=await _0x3066a2[_0x3f340d(0x21d)]();}catch(_0x37d35c){console[_0x3f340d(0x20b)](_0x3f340d(0x1e5),_0x37d35c);}}[_0x15893f(0x1d7)](){const _0x2cce94=_0x15893f;this[_0x2cce94(0x223)]=new WebSocket(_0x2cce94(0x238)),this['socket'][_0x2cce94(0x1fe)]=()=>{const _0x285ca0=_0x2cce94;console[_0x285ca0(0x1d4)](_0x285ca0(0x1de));},this['socket'][_0x2cce94(0x1ea)]=_0x50083c=>{const _0x45c15e=_0x2cce94,_0x10877b=JSON[_0x45c15e(0x20e)](_0x50083c[_0x45c15e(0x21b)]);_0x10877b['status']&&this[_0x45c15e(0x1ec)](_0x10877b['answer'],_0x45c15e(0x231));},this[_0x2cce94(0x223)][_0x2cce94(0x1e4)]=()=>{const _0x1c0e4f=_0x2cce94;console[_0x1c0e4f(0x1d4)](_0x1c0e4f(0x211));},this[_0x2cce94(0x223)][_0x2cce94(0x1c3)]=_0x388c49=>{const _0x22ea30=_0x2cce94;console[_0x22ea30(0x20b)](_0x22ea30(0x1c8),_0x388c49);};}async['sendMessage'](_0x101845){const _0x48b250=_0x15893f,_0x3527f0=document[_0x48b250(0x1cc)](_0x48b250(0x225)),_0x42b1fc=_0x3527f0[_0x48b250(0x216)]('vrx'),_0x126968=_0x3527f0[_0x48b250(0x216)](_0x48b250(0x205)),_0x3bd542=localStorage[_0x48b250(0x1c5)]('user_id'),_0x2f50f5={'session_id':_0x42b1fc,'owner_id':_0x126968,'user_id':_0x3bd542,'text':_0x101845};try{const _0x5e6d46=await fetch(_0x48b250(0x238),{'method':_0x48b250(0x22c),'headers':{'Content-Type':_0x48b250(0x1d0),'Token':_0x48b250(0x20c)},'body':JSON[_0x48b250(0x20f)](_0x2f50f5)});if(!_0x5e6d46['ok'])throw new Error('Failed\x20to\x20send\x20message');const _0x337d28=await _0x5e6d46[_0x48b250(0x21d)]();_0x337d28[_0x48b250(0x20d)]&&this[_0x48b250(0x1ec)](_0x337d28[_0x48b250(0x22e)],'bot');}catch(_0x57add8){console[_0x48b250(0x20b)](_0x48b250(0x1e3),_0x57add8);}}[_0x15893f(0x1ec)](_0x171a47,_0x4f1f1a){const _0x58e899=_0x15893f,_0x538001=document['querySelector'](_0x58e899(0x22a)),_0x24a819=document[_0x58e899(0x235)](_0x58e899(0x1c7)),_0x17f3b3=document[_0x58e899(0x214)](_0x58e899(0x1cb));_0x17f3b3[_0x58e899(0x1da)]['add']('chat-message',_0x58e899(0x1c9)+_0x4f1f1a),_0x4f1f1a===_0x58e899(0x231)&&(_0x17f3b3[_0x58e899(0x1f0)][_0x58e899(0x1c2)]=_0x58e899(0x1d9)),_0x17f3b3[_0x58e899(0x1ca)]='<div\x20class=\x22message-content\x22>'+unescapeStr(_0x171a47)+_0x58e899(0x1d3),_0x538001['appendChild'](_0x17f3b3),_0x538001['scrollTop']=_0x538001[_0x58e899(0x20a)],_0x24a819[_0x58e899(0x228)]=_0x24a819[_0x58e899(0x20a)];}[_0x15893f(0x1ef)](_0x4f2a33,_0x37167a){const _0x37b190=_0x15893f,_0x5af3cb=document[_0x37b190(0x235)](_0x37b190(0x22a)),_0x4a6299=document[_0x37b190(0x235)]('.chat-container'),_0x446c99=document[_0x37b190(0x214)](_0x37b190(0x1cb));_0x446c99[_0x37b190(0x1da)][_0x37b190(0x226)](_0x37b190(0x229),_0x37b190(0x1c9)+_0x37167a),_0x446c99[_0x37b190(0x1ca)]=_0x37b190(0x1f7)+unescapeStr(_0x4f2a33)+'</div>',_0x5af3cb[_0x37b190(0x1d1)](_0x446c99),_0x5af3cb[_0x37b190(0x228)]=_0x5af3cb[_0x37b190(0x20a)],_0x4a6299[_0x37b190(0x228)]=_0x4a6299['scrollHeight'],_0x5af3cb[_0x37b190(0x228)]=_0x5af3cb[_0x37b190(0x20a)];}[_0x15893f(0x22d)](){const _0x38dcba=_0x15893f;this['widgetContainer']['innerHTML']='\x0a\x20\x20\x20\x20<header\x20class=\x22widget__header\x22>\x0a\x20\x20\x20\x20\x20\x20<img\x20class=\x27icon-style\x27\x20src='+iconUrl+_0x38dcba(0x200)+chatbotWindowName+_0x38dcba(0x1cd)+welcomeMessage+_0x38dcba(0x1c6)+placeHolder+_0x38dcba(0x1e2);}[_0x15893f(0x239)](){const _0x258305=_0x15893f,_0x37ea9e=document[_0x258305(0x214)](_0x258305(0x1f0)),_0x28c7a0=document['createElement']('style');_0x37ea9e[_0x258305(0x1ca)]=styles[_0x258305(0x22f)](/^\s+|\n/gm,''),_0x28c7a0[_0x258305(0x1ca)]=aditionalStyles['replace'](/^\s+|\n/gm,''),document[_0x258305(0x1e6)]['appendChild'](_0x37ea9e),document[_0x258305(0x1dc)]['appendChild'](_0x28c7a0);}[_0x15893f(0x1d8)](){const _0x8ecd76=_0x15893f;this[_0x8ecd76(0x1e7)]=!this[_0x8ecd76(0x1e7)],this['open']?(this[_0x8ecd76(0x221)][_0x8ecd76(0x1da)][_0x8ecd76(0x226)](_0x8ecd76(0x232)),this[_0x8ecd76(0x207)]['classList'][_0x8ecd76(0x22b)](_0x8ecd76(0x232)),this[_0x8ecd76(0x1e8)][_0x8ecd76(0x1da)][_0x8ecd76(0x22b)](_0x8ecd76(0x232)),this[_0x8ecd76(0x1f4)]()):(this[_0x8ecd76(0x22d)](),this[_0x8ecd76(0x221)][_0x8ecd76(0x1da)][_0x8ecd76(0x22b)]('widget__hidden'),this[_0x8ecd76(0x207)][_0x8ecd76(0x1da)][_0x8ecd76(0x226)]('widget__hidden'),this[_0x8ecd76(0x1e8)][_0x8ecd76(0x1da)][_0x8ecd76(0x226)](_0x8ecd76(0x232)));}}function initializeWidget(){return new MessageWidget();}function _0x4e5c(_0x1909f1,_0x137321){const _0x558eab=_0x558e();return _0x4e5c=function(_0x4e5c96,_0x58f6f9){_0x4e5c96=_0x4e5c96-0x1c2;let _0x544fd9=_0x558eab[_0x4e5c96];return _0x544fd9;},_0x4e5c(_0x1909f1,_0x137321);}initializeWidget();
+import { CLOSE_ICON, MESSAGE_ICON, styles, aditionalStyles, chatbotWindowName, welcomeMessage, placeHolder, openChatbot } from "./assets.js";
+const iconUrl = localStorage.getItem('icon_url');
+function unescapeStr(str) {
+  return str.replace(/\\u[\dA-F]{4}/gi, function (match) {
+    return String.fromCharCode(parseInt(match.replace(/\\u/g, ''), 16));
+  });
+}
+
+class MessageWidget {
+  constructor(position = "bottom-right") {
+    this.position = this.getPosition(position);
+    this.open = !openChatbot;
+    this.initialize();
+    this.injectStyles();
+    this.messages = [];
+  }
+
+  position = "";
+  open = !openChatbot;
+  widgetContainer = null;
+
+  getPosition(position) {
+    const userExists = localStorage.getItem('user_id') !== null;
+    if (!userExists) {
+      const userId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+      localStorage.setItem('user_id', userId);
+    }
+    const [vertical, horizontal] = position.split("-");
+    return {
+      [vertical]: "30px",
+      [horizontal]: "30px",
+    };
+  }
+
+  async initialize() {
+    //insert new font in the the head
+    const head = document.head;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap';
+    head.appendChild(link);
+
+    const container = document.createElement("div");
+    // container.style.position = "fixed";
+    container.style.zIndex = "9999";
+    Object.keys(this.position).forEach(
+      (key) => (container.style[key] = this.position[key])
+    );
+    document.body.appendChild(container);
+
+    const buttonContainer = document.createElement("button");
+    buttonContainer.classList.add("button__container");
+
+    const widgetIconElement = document.createElement("span");
+    widgetIconElement.innerHTML = MESSAGE_ICON;
+    widgetIconElement.classList.add("widget__icon");
+    this.widgetIcon = widgetIconElement;
+
+    const closeIconElement = document.createElement("span");
+    closeIconElement.innerHTML = CLOSE_ICON;
+    closeIconElement.classList.add("widget__icon", "widget__hidden");
+    this.closeIcon = closeIconElement;
+
+    buttonContainer.appendChild(this.widgetIcon);
+    buttonContainer.appendChild(this.closeIcon);
+    buttonContainer.addEventListener("click", this.toggleOpen.bind(this));
+
+    this.widgetContainer = document.createElement("div");
+    this.widgetContainer.classList.add("widget__hidden", "widget__container");
+
+    this.createWidgetContent();
+
+    container.appendChild(this.widgetContainer);
+    container.appendChild(buttonContainer);
+    const sendButton = container.querySelector('.button-45');
+
+    sendButton.addEventListener('click', async (event) => {
+        console.log('phase 1');
+      event.preventDefault();
+      const messageInput = container.querySelector('#messageInput');
+      const userMessage = messageInput.value.trim();
+        console.log('phase 2');
+      if (userMessage === '') return;
+      console.log('phase 3');
+
+      this.displayMessage(userMessage, 'user');
+      this.sendMessage(userMessage);
+      
+      messageInput.value = '';
+    });
+    this.toggleOpen();
+}
+
+async createChatbotSession() {
+  const url = "https://prd-aichain-chatbot-upload-qd5u6w2c6q-uc.a.run.app/chatbot/sessions";
+  const script = document.getElementById('chatbotParameters')
+  const chatbotId = script.getAttribute('cgf');
+  const channel_type = "WEB";
+  const userId = localStorage.getItem('user_id');
+
+  const data = {
+    chatbot_id: chatbotId,
+    channel_type: channel_type,
+    user_id: userId,
+    session_id: userId,
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to create chatbot session");
+    }
+
+    const responseData = await response.json();
+    const chatMessages = responseData.messages;
+
+    for (const messageId in chatMessages) {
+      const message = chatMessages[messageId];
+      this.messages.push(message);
+    }
+    this.messages.sort((a, b) => {
+      return new Date(a.createdAt) - new Date(b.createdAt);
+    });
+    for (const message of this.messages) {
+      const sender = message.reaction === "NORMAL" ? "bot" : "user";
+      this.displayPreviousMessages(message.question, "user");
+      this.displayPreviousMessages(message.answer, "bot");
+    }
+
+    this.chatbotSessionId = responseData.session_id;
+    localStorage.setItem('chatbotSessionId', this.chatbotSessionId);
+  } catch (error) {
+    console.error("Error creating chatbot session:", error);
+  }
+}
+
+async addMessageSession(question, answer) {
+  const decodedAnswer = unescapeStr(answer);
+  const url = "https://aichain-chat-api-v2-qd5u6w2c6q-uc.a.run.app/add_message";
+  const script = document.getElementById('chatbotParameters')
+  const chatbotId = script.getAttribute('cgf');
+  const channel_type = "WEB";
+  const userId = script.getAttribute('thx');
+  const chatbotSessionId = localStorage.getItem('chatbotSessionId');
+  const secret_token = 'chatpgt-token-xkaos2z';
+  const headers = {'token': secret_token};
+  const sessionId = null;
+
+  const data = {
+    question: question,
+    answer: decodedAnswer,
+    metadata: {
+      chatbotId: chatbotId,
+      channelType: channel_type,
+      userId: userId,
+      sessionId: chatbotSessionId,
+    }
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        ...headers, 
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to create chatbot session");
+    }
+
+    const responseData = await response.json();
+
+  } catch (error) {
+    console.error("Error :", error);
+  }
+}
+
+createWebSocketConnection() {
+  this.socket = new WebSocket('https://prd-aichain-chatbot-messenger-qd5u6w2c6q-uc.a.run.app/web/webhook');
+
+  this.socket.onopen = () => {
+    console.log('WebSocket connection opened');
+  };
+
+  this.socket.onmessage = (event) => {
+    const data = JSON.parse(event.data);
+    if (data.status) {
+      this.displayMessage(data.answer, 'bot');
+    }
+  };
+
+  this.socket.onclose = () => {
+    console.log('WebSocket connection closed');
+  };
+
+  this.socket.onerror = (error) => {
+    console.error('WebSocket error:', error);
+  };
+}
+
+async sendMessage(query) {
+    console.log('send message');
+  const script = document.getElementById('chatbotParameters');
+  const session_id = script.getAttribute('vrx');
+  const owner_id = script.getAttribute('thx');
+  const user_id = localStorage.getItem('user_id');
+
+  const data = {
+    session_id: session_id,
+    owner_id: owner_id,
+    user_id: user_id,
+    text: query,
+  };
+
+  try {
+    console.log('try to send message');
+    const response = await fetch('https://prd-aichain-chatbot-messenger-qd5u6w2c6q-uc.a.run.app/web/webhook', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Token': '123456',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to send message");
+    }
+
+    const responseData = await response.json();
+    if (responseData.status) {
+      this.displayMessage(responseData.answer, 'bot');
+    }
+  } catch (error) {
+    console.error('Error sending message:', error);
+  }
+}
+
+
+displayMessage(text, sender) {
+  const chatBox = document.querySelector('.chat-box');
+  const chatContainer = document.querySelector('.chat-container');
+
+  const chatMessage = document.createElement('div');
+  chatMessage.classList.add('chat-message', `message-${sender}`);
+  if (sender === 'bot') {
+    chatMessage.style.animation = 'slideInFromLeft 0.5s';
+  }
+  chatMessage.innerHTML = `<div class="message-content">${unescapeStr(text)}</div>`;
+
+  chatBox.appendChild(chatMessage);
+  chatBox.scrollTop = chatBox.scrollHeight;
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+}
+
+displayPreviousMessages(text, sender) {
+  const chatBox = document.querySelector('.chat-box');
+  const chatContainer = document.querySelector('.chat-container');
+  
+    const chatMessage = document.createElement('div');
+    chatMessage.classList.add('chat-message', `message-${sender}`);
+    chatMessage.innerHTML = `<div class="message-content">${unescapeStr(text)}</div>`;
+    
+    chatBox.appendChild(chatMessage);
+    chatBox.scrollTop = chatBox.scrollHeight
+  chatContainer.scrollTop = chatContainer.scrollHeight;
+  chatBox.scrollTop = chatBox.scrollHeight;
+  
+}
+
+  createWidgetContent() {
+    this.widgetContainer.innerHTML = `
+    <header class="widget__header">
+      <img class='icon-style' src=${iconUrl}></img>
+      <h2>${chatbotWindowName}</h2>
+    </header>
+
+    <div class="chat-container">
+      <div class="chat-box">
+        <div class="chat-message message-bot">
+          ${welcomeMessage}
+        </div>
+      </div>
+    </div>
+
+    <form class="input-container">
+    <div class="inputGroup">
+      <input type="text" required="" autocomplete="off" id="messageInput" class="form-input">
+      <label 
+        for="messageInput"
+        >${placeHolder}</label>
+    </div>
+    <button class="button-45" role="button" type="submit">Enviar</button>
+    </form>
+    <footer class="poweredByContainer">
+      <p class="footer__text">Powered by <a class='nubot-link' href='https://nubot.io' target='_blank'>nubot.io</a></p>
+    </footer>
+    `;
+  }
+
+
+  injectStyles() {
+    const styleTag = document.createElement("style");
+    const secondStyleTag = document.createElement("style");
+    styleTag.innerHTML = styles.replace(/^\s+|\n/gm, "");
+    secondStyleTag.innerHTML = aditionalStyles.replace(/^\s+|\n/gm, "");
+
+    document.head.appendChild(styleTag);
+    document.body.appendChild(secondStyleTag);
+  }
+
+  toggleOpen() {
+    this.open = !this.open;
+    if (this.open) {
+      this.widgetIcon.classList.add("widget__hidden");
+      this.closeIcon.classList.remove("widget__hidden");
+      this.widgetContainer.classList.remove("widget__hidden");
+      
+      this.createChatbotSession();
+    } else {
+      this.createWidgetContent();
+      this.widgetIcon.classList.remove("widget__hidden");
+      this.closeIcon.classList.add("widget__hidden");
+      this.widgetContainer.classList.add("widget__hidden");
+      
+    }
+  }
+}
+
+function initializeWidget() {
+  return new MessageWidget();
+}
+
+initializeWidget();
